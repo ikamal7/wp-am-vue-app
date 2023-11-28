@@ -109,6 +109,48 @@ class Api {
         return rest_ensure_response( $data );
     }
 
+    /**
+     * Save settings
+     *
+     * @since 0.0.1
+     *
+     * @param  mixed $request form field data for settings.
+     * @return rest Response
+     */
+    public function save_settings_callback( $request ) {
+
+        // Verify the nonce for security.
+        $nonce = $request->get_header( 'X-WP-Nonce' );
+        if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
+            return rest_ensure_response( array( 'error' => 'Nonce verification failed' ) );
+        }
+
+        // Extract the form data from the request.
+
+		$data = json_decode( $request->get_body() );
+
+		if ( update_option( 'am_vue_app_settings', $data ) ) {
+            return rest_ensure_response( $data );
+        }
+
+        // Return the settings as a REST response.
+        return rest_ensure_response( array( 'error' => 'Settings update failed' ) );
+	}
+
+    /**
+     * Get settings from rest api callback
+     *
+     * @since 0.0.1
+     *
+     * @return rest Response
+     */
+    public function get_settings() {
+        // Retrieve your settings from the options table.
+        $settings = get_option( 'am_vue_app_settings', true );
+
+        // Return the settings as a REST response.
+        return rest_ensure_response( $settings );
+    }
 
     /**
      * Check request permissions
