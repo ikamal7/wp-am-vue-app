@@ -1,0 +1,1033 @@
+/*!
+  * vue-router v4.2.5
+  * (c) 2023 Eduardo San Martin Morote
+  * @license MIT
+  */
+
+/*!
+ * @kurkle/color v0.3.2
+ * https://github.com/kurkle/color#readme
+ * (c) 2023 Jukka Kurkela
+ * Released under the MIT License
+ */
+
+/*!
+ * Chart.js v4.4.0
+ * https://www.chartjs.org
+ * (c) 2023 Chart.js Contributors
+ * Released under the MIT License
+ */
+
+/*! #__NO_SIDE_EFFECTS__ */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BarChart.vue?vue&type=script&setup=true&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BaseInput.vue?vue&type=script&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BaseTable.vue?vue&type=script&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Button.vue?vue&type=script&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./SkeletonText.vue?vue&type=script&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./TableLoading.vue?vue&type=script&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Tabs.vue?vue&type=script&lang=js */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BarChart.vue?vue&type=template&id=6a09facc */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BaseInput.vue?vue&type=template&id=d0938918&scoped=true */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BaseTable.vue?vue&type=template&id=fc36ea7a&scoped=true */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Button.vue?vue&type=template&id=5975756f&scoped=true */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./SkeletonText.vue?vue&type=template&id=1c6d1848&scoped=true */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./TableLoading.vue?vue&type=template&id=344abf38&scoped=true */
+
+/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Tabs.vue?vue&type=template&id=663bac2f */
+
+/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BaseInput.vue?vue&type=style&index=0&id=d0938918&lang=scss&scoped=true */
+
+/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./BaseTable.vue?vue&type=style&index=0&id=fc36ea7a&lang=scss&scoped=true */
+
+/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Button.vue?vue&type=style&index=0&id=5975756f&lang=scss&scoped=true */
+
+/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./SkeletonText.vue?vue&type=style&index=0&id=1c6d1848&lang=scss&scoped=true */
+
+/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./TableLoading.vue?vue&type=style&index=0&id=344abf38&lang=scss&scoped=true */
+
+/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Graph.vue?vue&type=script&lang=js */
+
+/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Settings.vue?vue&type=script&lang=js */
+
+/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Table.vue?vue&type=script&lang=js */
+
+/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Graph.vue?vue&type=template&id=35f6d25a */
+
+/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Settings.vue?vue&type=template&id=b66ee972&scoped=true */
+
+/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Table.vue?vue&type=template&id=05650cda */
+
+/*! -!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/vue-loader/dist/stylePostLoader.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./Settings.vue?vue&type=style&index=0&id=b66ee972&lang=scss&scoped=true */
+
+/*! -!../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./App.vue?vue&type=script&lang=js */
+
+/*! -!../node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./App.vue?vue&type=template&id=7ba5bd90 */
+
+/*! ../../../helpers/AxiosURLSearchParams.js */
+
+/*! ../../../node_modules/vue-loader/dist/exportHelper.js */
+
+/*! ../../node_modules/vue-loader/dist/exportHelper.js */
+
+/*! ../adapters/adapters.js */
+
+/*! ../cancel/CanceledError.js */
+
+/*! ../cancel/isCancel.js */
+
+/*! ../components/button/Button.vue */
+
+/*! ../components/chart/BarChart.vue */
+
+/*! ../components/input/BaseInput.vue */
+
+/*! ../components/tables/BaseTable.vue */
+
+/*! ../core/AxiosError.js */
+
+/*! ../core/AxiosHeaders.js */
+
+/*! ../core/buildFullPath.js */
+
+/*! ../defaults/index.js */
+
+/*! ../defaults/transitional.js */
+
+/*! ../env/data.js */
+
+/*! ../helpers/AxiosURLSearchParams.js */
+
+/*! ../helpers/buildURL.js */
+
+/*! ../helpers/combineURLs.js */
+
+/*! ../helpers/formDataToJSON.js */
+
+/*! ../helpers/isAbsoluteURL.js */
+
+/*! ../helpers/parseHeaders.js */
+
+/*! ../helpers/parseProtocol.js */
+
+/*! ../helpers/speedometer.js */
+
+/*! ../helpers/toFormData.js */
+
+/*! ../helpers/toURLEncodedForm.js */
+
+/*! ../helpers/validator.js */
+
+/*! ../node_modules/vue-loader/dist/exportHelper.js */
+
+/*! ../pages/Graph.vue */
+
+/*! ../pages/Settings.vue */
+
+/*! ../pages/Table.vue */
+
+/*! ../platform/index.js */
+
+/*! ../platform/node/classes/FormData.js */
+
+/*! ../skeleton/SkeletonText.vue */
+
+/*! ../utils.js */
+
+/*! ./../core/settle.js */
+
+/*! ./../helpers/buildURL.js */
+
+/*! ./../helpers/cookies.js */
+
+/*! ./../helpers/isURLSameOrigin.js */
+
+/*! ./../utils.js */
+
+/*! ./App.vue */
+
+/*! ./App.vue?vue&type=script&lang=js */
+
+/*! ./App.vue?vue&type=template&id=7ba5bd90 */
+
+/*! ./AxiosError.js */
+
+/*! ./AxiosHeaders.js */
+
+/*! ./BarChart.vue?vue&type=script&setup=true&lang=js */
+
+/*! ./BarChart.vue?vue&type=template&id=6a09facc */
+
+/*! ./BaseInput.vue?vue&type=script&lang=js */
+
+/*! ./BaseInput.vue?vue&type=style&index=0&id=d0938918&lang=scss&scoped=true */
+
+/*! ./BaseInput.vue?vue&type=template&id=d0938918&scoped=true */
+
+/*! ./BaseTable.vue?vue&type=script&lang=js */
+
+/*! ./BaseTable.vue?vue&type=style&index=0&id=fc36ea7a&lang=scss&scoped=true */
+
+/*! ./BaseTable.vue?vue&type=template&id=fc36ea7a&scoped=true */
+
+/*! ./Button.vue?vue&type=script&lang=js */
+
+/*! ./Button.vue?vue&type=style&index=0&id=5975756f&lang=scss&scoped=true */
+
+/*! ./Button.vue?vue&type=template&id=5975756f&scoped=true */
+
+/*! ./CanceledError.js */
+
+/*! ./Graph.vue?vue&type=script&lang=js */
+
+/*! ./Graph.vue?vue&type=template&id=35f6d25a */
+
+/*! ./InterceptorManager.js */
+
+/*! ./Settings.vue?vue&type=script&lang=js */
+
+/*! ./Settings.vue?vue&type=style&index=0&id=b66ee972&lang=scss&scoped=true */
+
+/*! ./Settings.vue?vue&type=template&id=b66ee972&scoped=true */
+
+/*! ./SkeletonText.vue?vue&type=script&lang=js */
+
+/*! ./SkeletonText.vue?vue&type=style&index=0&id=1c6d1848&lang=scss&scoped=true */
+
+/*! ./SkeletonText.vue?vue&type=template&id=1c6d1848&scoped=true */
+
+/*! ./Table.vue?vue&type=script&lang=js */
+
+/*! ./Table.vue?vue&type=template&id=05650cda */
+
+/*! ./TableLoading.vue */
+
+/*! ./TableLoading.vue?vue&type=script&lang=js */
+
+/*! ./TableLoading.vue?vue&type=style&index=0&id=344abf38&lang=scss&scoped=true */
+
+/*! ./TableLoading.vue?vue&type=template&id=344abf38&scoped=true */
+
+/*! ./Tabs.vue?vue&type=script&lang=js */
+
+/*! ./Tabs.vue?vue&type=template&id=663bac2f */
+
+/*! ./adapters/adapters.js */
+
+/*! ./buildFullPath.js */
+
+/*! ./cancel/CancelToken.js */
+
+/*! ./cancel/CanceledError.js */
+
+/*! ./cancel/isCancel.js */
+
+/*! ./chunks/helpers.segment.js */
+
+/*! ./classes/Blob.js */
+
+/*! ./classes/FormData.js */
+
+/*! ./classes/URLSearchParams.js */
+
+/*! ./common/utils.js */
+
+/*! ./components/tabs/Tabs.vue */
+
+/*! ./const.js */
+
+/*! ./core/Axios.js */
+
+/*! ./core/AxiosError.js */
+
+/*! ./core/AxiosHeaders.js */
+
+/*! ./core/mergeConfig.js */
+
+/*! ./create-i18n */
+
+/*! ./createAddHook */
+
+/*! ./createCurrentHook */
+
+/*! ./createDidHook */
+
+/*! ./createDoingHook */
+
+/*! ./createHasHook */
+
+/*! ./createHooks */
+
+/*! ./createRemoveHook */
+
+/*! ./createRunHook */
+
+/*! ./default-i18n */
+
+/*! ./defaults/index.js */
+
+/*! ./dispatchRequest.js */
+
+/*! ./env.js */
+
+/*! ./env/data.js */
+
+/*! ./helpers/HttpStatusCode.js */
+
+/*! ./helpers/bind.js */
+
+/*! ./helpers/formDataToJSON.js */
+
+/*! ./helpers/isAxiosError.js */
+
+/*! ./helpers/spread.js */
+
+/*! ./helpers/toFormData.js */
+
+/*! ./http.js */
+
+/*! ./i18n */
+
+/*! ./mergeConfig.js */
+
+/*! ./mixins/i18n */
+
+/*! ./modules/global */
+
+/*! ./modules/graph */
+
+/*! ./modules/settings */
+
+/*! ./modules/table */
+
+/*! ./node/index.js */
+
+/*! ./proxy.js */
+
+/*! ./router */
+
+/*! ./sprintf */
+
+/*! ./store */
+
+/*! ./style.scss */
+
+/*! ./styles/main.scss */
+
+/*! ./time.js */
+
+/*! ./toFormData.js */
+
+/*! ./transformData.js */
+
+/*! ./transitional.js */
+
+/*! ./utils.js */
+
+/*! ./utils/menu-fix */
+
+/*! ./validateHookName.js */
+
+/*! ./validateNamespace.js */
+
+/*! ./xhr.js */
+
+/*! @kurkle/color */
+
+/*! @tannin/compile */
+
+/*! @tannin/evaluate */
+
+/*! @tannin/plural-forms */
+
+/*! @tannin/postfix */
+
+/*! @vue/devtools-api */
+
+/*! @vue/reactivity */
+
+/*! @vue/runtime-core */
+
+/*! @vue/runtime-dom */
+
+/*! @vue/shared */
+
+/*! @wordpress/hooks */
+
+/*! @wordpress/i18n */
+
+/*! axios */
+
+/*! chart.js */
+
+/*! memize */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/*! sprintf-js */
+
+/*! tannin */
+
+/*! vue */
+
+/*! vue-chartjs */
+
+/*! vue-router */
+
+/*! vuex */
+
+/*!*********************!*\
+  !*** ./src/App.vue ***!
+  \*********************/
+
+/*!*********************!*\
+  !*** ./src/i18n.js ***!
+  \*********************/
+
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+
+/*!****************************!*\
+  !*** ./src/mixins/i18n.js ***!
+  \****************************/
+
+/*!****************************!*\
+  !*** ./src/store/index.js ***!
+  \****************************/
+
+/*!*****************************!*\
+  !*** ./src/pages/Graph.vue ***!
+  \*****************************/
+
+/*!*****************************!*\
+  !*** ./src/pages/Table.vue ***!
+  \*****************************/
+
+/*!*****************************!*\
+  !*** ./src/router/index.js ***!
+  \*****************************/
+
+/*!******************************!*\
+  !*** ./src/styles/main.scss ***!
+  \******************************/
+
+/*!*******************************!*\
+  !*** ./src/utils/menu-fix.js ***!
+  \*******************************/
+
+/*!********************************!*\
+  !*** ./src/pages/Settings.vue ***!
+  \********************************/
+
+/*!************************************!*\
+  !*** ./src/store/modules/graph.js ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/store/modules/table.js ***!
+  \************************************/
+
+/*!*************************************!*\
+  !*** ./src/store/modules/global.js ***!
+  \*************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/tannin/index.js ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** ./src/components/tabs/Tabs.vue ***!
+  \**************************************/
+
+/*!***************************************!*\
+  !*** ./src/store/modules/settings.js ***!
+  \***************************************/
+
+/*!****************************************!*\
+  !*** ./src/components/tabs/style.scss ***!
+  \****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/axios.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/utils.js ***!
+  \*****************************************/
+
+/*!******************************************!*\
+  !*** ./src/components/button/Button.vue ***!
+  \******************************************/
+
+/*!*******************************************!*\
+  !*** ./node_modules/memize/dist/index.js ***!
+  \*******************************************/
+
+/*!*******************************************!*\
+  !*** ./src/components/chart/BarChart.vue ***!
+  \*******************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/env/data.js ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./src/components/input/BaseInput.vue ***!
+  \********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/chart.js/dist/chart.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./src/App.vue?vue&type=script&lang=js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./src/components/tables/BaseTable.vue ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/axios/lib/core/Axios.js ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/@tannin/compile/index.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/@tannin/postfix/index.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/axios/lib/core/settle.js ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/@tannin/evaluate/index.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/adapters/xhr.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/bind.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/null.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/sprintf-js/src/sprintf.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/vue-chartjs/dist/index.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./src/components/tables/TableLoading.vue ***!
+  \************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/defaults/index.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/spread.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/platform/index.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./src/components/skeleton/SkeletonText.vue ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/core/AxiosError.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/cookies.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./src/App.vue?vue&type=template&id=7ba5bd90 ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/@tannin/plural-forms/index.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/vuex/dist/vuex.esm-bundler.js ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/adapters/adapters.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/core/AxiosHeaders.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/validator.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/vue-router/dist/vue-router.mjs ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/pages/Graph.vue?vue&type=script&lang=js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/pages/Table.vue?vue&type=script&lang=js ***!
+  \*****************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/@kurkle/color/dist/color.esm.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/buildFullPath.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/transformData.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/toFormData.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/vue-loader/dist/exportHelper.js ***!
+  \******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/env.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/speedometer.js ***!
+  \*******************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/time.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/CanceledError.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAxiosError.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./src/pages/Settings.vue?vue&type=script&lang=js ***!
+  \********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/const.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/index.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/proxy.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/defaults/transitional.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/parseProtocol.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/platform/common/utils.js ***!
+  \*********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/HttpStatusCode.js ***!
+  \**********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/formDataToJSON.js ***!
+  \**********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/axios/lib/platform/browser/index.js ***!
+  \**********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/vue/dist/vue.runtime.esm-bundler.js ***!
+  \**********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./src/pages/Graph.vue?vue&type=template&id=35f6d25a ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./src/pages/Table.vue?vue&type=template&id=05650cda ***!
+  \***********************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/@wordpress/i18n/build-module/index.js ***!
+  \************************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/toURLEncodedForm.js ***!
+  \************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/@vue/shared/dist/shared.esm-bundler.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/index.js ***!
+  \*************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/@wordpress/i18n/build-module/sprintf.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/chart.js/dist/chunks/helpers.segment.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./src/components/tabs/Tabs.vue?vue&type=script&lang=js ***!
+  \**************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/AxiosURLSearchParams.js ***!
+  \****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/axios/lib/platform/browser/classes/Blob.js ***!
+  \*****************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/@wordpress/i18n/build-module/create-i18n.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./src/components/button/Button.vue?vue&type=script&lang=js ***!
+  \******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createHooks.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/@wordpress/i18n/build-module/default-i18n.js ***!
+  \*******************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./src/components/input/BaseInput.vue?vue&type=script&lang=js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./src/components/tabs/Tabs.vue?vue&type=template&id=663bac2f ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createAddHook.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createDidHook.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createHasHook.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createRunHook.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/axios/lib/platform/browser/classes/FormData.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./src/components/tables/BaseTable.vue?vue&type=script&lang=js ***!
+  \*********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createDoingHook.js ***!
+  \***********************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createRemoveHook.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/validateHookName.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./src/components/tables/TableLoading.vue?vue&type=script&lang=js ***!
+  \************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/createCurrentHook.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/@wordpress/hooks/build-module/validateNamespace.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./src/components/chart/BarChart.vue?vue&type=template&id=6a09facc ***!
+  \*************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./src/components/skeleton/SkeletonText.vue?vue&type=script&lang=js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./src/pages/Settings.vue?vue&type=template&id=b66ee972&scoped=true ***!
+  \**************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/axios/lib/platform/browser/classes/URLSearchParams.js ***!
+  \****************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./src/components/chart/BarChart.vue?vue&type=script&setup=true&lang=js ***!
+  \******************************************************************************/
+
+/*!************************************************************************************!*\
+  !*** ./src/components/button/Button.vue?vue&type=template&id=5975756f&scoped=true ***!
+  \************************************************************************************/
+
+/*!**************************************************************************************!*\
+  !*** ./src/components/input/BaseInput.vue?vue&type=template&id=d0938918&scoped=true ***!
+  \**************************************************************************************/
+
+/*!***************************************************************************************!*\
+  !*** ./src/components/tables/BaseTable.vue?vue&type=template&id=fc36ea7a&scoped=true ***!
+  \***************************************************************************************/
+
+/*!*****************************************************************************************!*\
+  !*** ./src/pages/Settings.vue?vue&type=style&index=0&id=b66ee972&lang=scss&scoped=true ***!
+  \*****************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./src/components/tables/TableLoading.vue?vue&type=template&id=344abf38&scoped=true ***!
+  \******************************************************************************************/
+
+/*!********************************************************************************************!*\
+  !*** ./src/components/skeleton/SkeletonText.vue?vue&type=template&id=1c6d1848&scoped=true ***!
+  \********************************************************************************************/
+
+/*!***************************************************************************************************!*\
+  !*** ./src/components/button/Button.vue?vue&type=style&index=0&id=5975756f&lang=scss&scoped=true ***!
+  \***************************************************************************************************/
+
+/*!*****************************************************************************************************!*\
+  !*** ./src/components/input/BaseInput.vue?vue&type=style&index=0&id=d0938918&lang=scss&scoped=true ***!
+  \*****************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./src/components/tables/BaseTable.vue?vue&type=style&index=0&id=fc36ea7a&lang=scss&scoped=true ***!
+  \******************************************************************************************************/
+
+/*!*********************************************************************************************************!*\
+  !*** ./src/components/tables/TableLoading.vue?vue&type=style&index=0&id=344abf38&lang=scss&scoped=true ***!
+  \*********************************************************************************************************/
+
+/*!***********************************************************************************************************!*\
+  !*** ./src/components/skeleton/SkeletonText.vue?vue&type=style&index=0&id=1c6d1848&lang=scss&scoped=true ***!
+  \***********************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/App.vue?vue&type=script&lang=js ***!
+  \********************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Graph.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Table.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Settings.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tabs/Tabs.vue?vue&type=script&lang=js ***!
+  \*************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/button/Button.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/input/BaseInput.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tables/BaseTable.vue?vue&type=script&lang=js ***!
+  \********************************************************************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tables/TableLoading.vue?vue&type=script&lang=js ***!
+  \***********************************************************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/skeleton/SkeletonText.vue?vue&type=script&lang=js ***!
+  \*************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/chart/BarChart.vue?vue&type=script&setup=true&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/App.vue?vue&type=template&id=7ba5bd90 ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Graph.vue?vue&type=template&id=35f6d25a ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Table.vue?vue&type=template&id=05650cda ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tabs/Tabs.vue?vue&type=template&id=663bac2f ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/chart/BarChart.vue?vue&type=template&id=6a09facc ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Settings.vue?vue&type=template&id=b66ee972&scoped=true ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/button/Button.vue?vue&type=template&id=5975756f&scoped=true ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/input/BaseInput.vue?vue&type=template&id=d0938918&scoped=true ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tables/BaseTable.vue?vue&type=template&id=fc36ea7a&scoped=true ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tables/TableLoading.vue?vue&type=template&id=344abf38&scoped=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/skeleton/SkeletonText.vue?vue&type=template&id=1c6d1848&scoped=true ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/pages/Settings.vue?vue&type=style&index=0&id=b66ee972&lang=scss&scoped=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/button/Button.vue?vue&type=style&index=0&id=5975756f&lang=scss&scoped=true ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/input/BaseInput.vue?vue&type=style&index=0&id=d0938918&lang=scss&scoped=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tables/BaseTable.vue?vue&type=style&index=0&id=fc36ea7a&lang=scss&scoped=true ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/tables/TableLoading.vue?vue&type=style&index=0&id=344abf38&lang=scss&scoped=true ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[13].use[0]!./src/components/skeleton/SkeletonText.vue?vue&type=style&index=0&id=1c6d1848&lang=scss&scoped=true ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
