@@ -1,12 +1,11 @@
 <template>
-    <div id="wp-am-vue-app">
-        <div class="main-content">
-            <h2 role="wp-am-vue-app-notice" data-text="Don't remove me, I am super important for admin notice"></h2>
-            <h3>{{ __('WP AM Vue App', 'wp-am-vue-app') }}</h3>
-            <tabs />
-            <router-view />
-        </div>
+  <div id="wp-am-vue-app">
+    <div class="main-content">
+      <h3>{{ __('WP AM Vue App', 'wp-am-vue-app') }}</h3>
+      <tabs />
+      <router-view />
     </div>
+  </div>
 </template>
 
 <script>

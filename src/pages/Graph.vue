@@ -14,34 +14,34 @@ import { mapActions, mapGetters } from 'vuex';
 import BarChart from '../components/chart/BarChart.vue';
 
 export default {
-  components: { BarChart },
-  name: 'Graph',
+    name: 'Graph',
+    components: { BarChart },
 
-  computed: {
-    ...mapGetters(['getGraphData']),
-    graphData() {
-      return {
-        labels: this.getGraphData.labels,
-        datasets: [
-          {
-            label: 'Values',
-            backgroundColor: 'rgba(75, 192, 192, 1)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 5,
-            data: this.getGraphData.values,
-          },
-        ],
-      };
+    computed: {
+        ...mapGetters(['getGraphData']),
+        graphData() {
+            return {
+                labels: this.getGraphData.labels,
+                datasets: [
+                    {
+                        label: 'Values',
+                        backgroundColor: 'rgba(75, 192, 192, 1)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 5,
+                        data: this.getGraphData.values,
+                    },
+                ],
+            };
+        },
     },
-  },
 
-  created() {
+    created() {
     // Dispatch the fetchGraphData action when the component is created
-    this.fetchGraphData();
-  },
+        this.fetchGraphData();
+    },
 
-  methods: {
-    ...mapActions(['fetchGraphData']),
-  },
+    methods: {
+        ...mapActions(['fetchGraphData']),
+    },
 };
 </script>
