@@ -1,31 +1,16 @@
 <template>
-  <div className="table-responsive">
+  <div class="table-responsive">
     <TableLoading v-if="loading" />
-
-    <table v-if="!loading">
+    <table v-if="!loading" class="base-table">
       <thead>
         <tr>
-          <th
-            v-for="header in headers"
-            :key="header"
-          >
-            {{ header }}
-          </th>
+          <th v-for="header in headers" :key="header">{{ header }}</th>
         </tr>
       </thead>
       <tbody>
-        <tr
-          v-for="row in rows"
-          :key="row.id"
-        >
-          <td
-            v-for="key in headers"
-            :key="key"
-          >
-            <div
-              v-if="isHtml(key?.toLowerCase())"
-              v-html="row?.[key?.toLowerCase()]"
-            />
+        <tr v-for="row in rows" :key="row.id">
+          <td v-for="key in headers" :key="key">
+            <div v-if="isHtml(key?.toLowerCase())" v-html="row?.[key?.toLowerCase()]" />
             <span v-else>{{ row?.[key?.toLowerCase()] }}</span>
           </td>
         </tr>
@@ -39,68 +24,75 @@ import { mapGetters } from "vuex";
 import TableLoading from './TableLoading.vue';
 
 export default {
-    name: 'BaseTable',
-
-    components: {
-        TableLoading,
+  name: 'BaseTable',
+  components: {
+    TableLoading,
+  },
+  props: {
+    headers: {
+      type: Array,
+      required: true,
     },
-
-    props: {
-        headers: {
-            type: Array,
-            required: true,
-        },
-        rows: {
-            type: Object,
-            required: true,
-        },
-        loading: {
-            type: Boolean,
-            required: false,
-            default: false,
-        },
-        htmlColumns: {
-            type: Array,
-            required: false,
-            default: () => [],
-        }
+    rows: {
+      type: Array,
+      required: true,
     },
-
-    computed: {
-        ...mapGetters(["settings"]),
+    loading: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
-
-    methods: {
-        isHtml(keyName) {
-            return this.htmlColumns.includes(keyName);
-        }
+    htmlColumns: {
+      type: Array,
+      required: false,
+      default: () => [],
     }
+  },
+  computed: {
+    ...mapGetters(["settings"]),
+  },
+  methods: {
+    isHtml(keyName) {
+      return this.htmlColumns.includes(keyName);
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .table-responsive {
-    overflow-x: auto;
+  overflow-x: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        border: 1px solid #8080801a;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #8080801a;
 
-        th, td {
-            background: var(--color-white);
-            padding: 1rem .75rem 1rem .75rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        thead {
-            tr {
-                th {
-                    text-align: left;
-                    text-transform: uppercase;
-                }
-            }
-        }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
     }
+
+    th {
+      background-color: #0073aa;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    td {
+      background-color: white;
+      color: #333;
+    }
+
+    tr:hover td {
+      background-color: #f1f1f1;
+    }
+  }
 }
 </style>

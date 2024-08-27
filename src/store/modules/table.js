@@ -1,4 +1,3 @@
-// tableModule.js
 import axios from 'axios';
 
 const state = {
@@ -17,8 +16,12 @@ const mutations = {
 
 const actions = {
     getTableData({ commit, rootGetters }) {
-        const settings = rootGetters[ 'settings' ];
+        const settings = rootGetters['settings'];
 
+        if (!settings) {
+            console.error('Settings not found');
+            return;
+        }
 
         axios.get(`${wpAmVue.site.rest_base}/wp-am-vue-app/v1/data`)
             .then(response => {
@@ -29,11 +32,10 @@ const actions = {
                     url: row.url,
                     title: row.title,
                     pageviews: row.pageviews,
-                    date: settings?.readable === 1 ? new Date(row.date * 1000).toLocaleString() : row.date,
+                    date: settings.readable === 1 ? new Date(row.date * 1000).toLocaleString() : row.date,
                 }));
 
                 const slicedRows = rows.slice(0, settings.rows);
-
 
                 commit('SET_TABLE_HEADERS', headers);
                 commit('SET_TABLE_ROWS', slicedRows);

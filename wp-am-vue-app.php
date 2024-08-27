@@ -7,7 +7,7 @@
  * @license GPL-3.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       Wp AM Vue App
+ * Plugin Name:       WP AM Vue App
  * Description:       A Vue JS Admin App for WordPress - Webpack, Sass, Vue, Vuex, Vue-router.
  * Requires at least: 5.8
  * Requires PHP:      7.4

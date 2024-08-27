@@ -12,9 +12,9 @@ export default {
 
 <style lang="scss" scoped>
     button {
-        background: #3869ff;
+        background: #e27730;
         color: #fff;
-        border: 0px solid;
+        border: 0px solid #e27730;
         padding: 10px 20px;
         cursor: pointer;
         transition: all;
