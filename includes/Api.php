@@ -89,8 +89,9 @@ class Api {
 
         // Check if the data is cached.
         $cached_data = get_option( 'am_api_cached_data' );
+        
         if ( $cached_data ) {
-            return WP_REST_Response();
+            return new \WP_REST_Response($cached_data);
         }
 
         // Fetch data from the external API.
